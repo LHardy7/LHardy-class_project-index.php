@@ -25,7 +25,6 @@ var displayCurrentTime = function() {
     $("seconds").firstChild.nodeValue = padSingleDigit(seconds);
     $("ampm").firstChild.nodeValue = ampm;
     
-
 };
 
 var padSingleDigit = function(num) {
@@ -90,7 +89,7 @@ var resetStopwatch = function(evt) {
     elapsedMinutes = 0;
     elapsedSeconds = 0;
     
-     $("s_minutes").firstChild.nodeValue = padSingleDigit(elapsedMinutes);
+    $("s_minutes").firstChild.nodeValue = padSingleDigit(elapsedMinutes);
     $("s_seconds").firstChild.nodeValue = padSingleDigit(elapsedSeconds);
     $("s_ms").firstChild.nodeValue = elapsedMilliseconds;
     
