@@ -47,7 +47,7 @@ var displayResults = function(){
 window.onload = function () {
 	$("add").onclick = addScore;
 	$("display_results").onclick = displayResults;
-	$("display_scores").onclick = displayScores;
+	//$("display_scores").onclick = displayScores;
 };
 
 
