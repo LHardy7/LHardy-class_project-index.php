@@ -6,6 +6,7 @@ var selectedNames = [];
 $(document).ready(function() {
     //each is used to represent the one of the six img tag in the list
     $("ul img").each(function(){
+        //rollover images preloaded
         //img_with_info is the attribute id
         var img_with_info = $(this).attr("id");
         //img_wo_info provides the attribute src for the regular img tag without info
