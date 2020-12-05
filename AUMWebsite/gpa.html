@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Auburn University at Montgomery</title>
+    <link rel="stylesheet"href="website.css">
+    <link rel="shortcut icon" href="images/aumlogo.jpg">
+     
+</head>
+    
+<body>  
+    <header>
+        <img src="images/aumweb.jpg" alt="logo">
+        <h1><span class = "title"> AUM Department of Computer Science</span></h1>
+    </header>
+    
+   <nav id = "nav_menu">
+     <ul>
+        <li><a href="index.html" >Home</a></li>
+         <li><a href="csprogram.html">Computer Science Program</a></li>
+         <li><a href="ta.html">Teaching Assistant Application</a></li>
+         <li><a href = "gpa.html"class="active">GPA Calculate</a></li>
+         <li><a href="moreinfo.html">More Information</a> 
+       </ul>
+     </nav>
+    
+<main> 
+    <h3><center>GPA Calculator</center></h3>
+  <center>
+    <form name = "GPACalculator">
+    <table border="1">
+    <tr>
+    <td>Course</td>
+    <td>Grade Recieved</td>
+    <td> Credit Hours</td>
+    </tr>
+       <tr>
+    <td>Course 1</td>
+    <td><input type="text" name="grade1" align=top size="4"></td>
+    <td><input type="text" name="credit1" align=top size="4"></td>
+    </tr>
+       <tr>
+    <td>Course 2</td>
+    <td><input type="text" name="grade2" align=top size="4"></td>
+    <td><input type="text" name="credit2" align=top size="4"></td>
+    </tr>
+       <tr>
+    <td>Course 3</td>
+    <td><input type="text" name="grade3" align=top size="4"></td>
+    <td><input type="text" name="credit3" align=top size="4"></td>
+    </tr>
+       <tr>
+    <td>Course 4</td>
+    <td><input type="text" name="grade4" align=top size="4"></td>
+    <td><input type="text" name="credit4" align=top size="4"></td>
+    </tr>
+        <tbody>
+            <tr>
+         <td>Your GPA is: 
+                <input name = "GPA" size ="5"></td>
+        <td><input type="button" value="Calculate" onclick="displayGPA" ></td>
+        <tbody>
+        <tr>
+        <td>A</td>
+        <td>4.0</td>
+            </tr>
+         <tr>
+        <td>B</td>
+        <td>3.0</td>
+            </tr> <tr>
+        <td>C</td>
+        <td>2.0</td>
+            </tr> <tr>
+        <td>D</td>
+        <td>1.0</td>
+            </tr> <tr>
+        <td>F</td>
+        <td>0</td>
+            </tr>
+        </tbody>
+            </tr>
+        </table>
+      </form>
+    </center> 
+ </main>
+<br>
+    
+
+<script language = "javascript">
+
+ function displayGPA(){
+     //declaring variables
+     var grade;
+     var credit;
+     var gradeCount = 4;
+     var userGrade;
+    var userCredit;
+     
+     
+     //declaring grades to their correct credit hour
+     
+     grade[0]="A";
+     credit[0]=4;
+     grade[1]="B";
+     credit[1]=3;
+     grade[2]="C";
+     credit[2]=2;
+     grade[3]="D";
+     credit[3]=1;
+     grade[4]="F";
+     credit[4]=0;
+     
+     //user input grade and credit hour value
+
+     userGrade[0] = document.GPACalculator.grade1.value; userGrade[1] = document.GPACalculator.grade2.value;
+     userGrade[2] = document.GPACalculator.grade3.value;
+     userGrade[3] = document.GPACalculator.grade4.value;
+
+     //user inputted credit hour value
+
+     userCredit[0]= document.GPACalculator.credit1.value;
+     userCredit[1]= document.GPACalculator.credit2.value;
+     userCredit[2]= document.GPACalculator.credit3.value;
+     userCredit[3]= document.GPACalculator.credit4.value;
+     
+
+     //GPA Calculations
+     
+     var allcredit = 0;
+     var allgrade = 0;
+     var total = 0;
+     var gpa = 0;
+     
+     gpa = allgrade*allcredit/allcredit;
+   
+ 
+     return 0;
+ }
+    </script>
+    
+    <footer>
+    <p>&copy; 2020 Lorene Hardy <br>
+        Contact Email: lhardy7@aum.edu <br>
+        Contact Number: (334)413-0230 </p>
+        </footer>
+</body>
+</html>
